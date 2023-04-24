@@ -2,7 +2,7 @@
   "name": "battleship",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://michalosman.github.io/battleship",
+  "homepage": "http://Thomas-boop.github.io/battleship",
   "main": "src/index.tsx",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -27,13 +27,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "jest": "jest",
-    "watch": "jest --watch",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "watch": "jest --watch"
   },
   "eslintConfig": {
     "extends": [
